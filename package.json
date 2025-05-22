@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "npx tsc-watch --onsuccess \"node ./lib/index.js\"",
+    "start": "npx tsc-watch --onsuccess \"node --env-file=.env  ./lib/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -14,6 +14,7 @@
     "@tsconfig/recommended": "^1.0.8",
     "ecommerce-api": "file:",
     "express": "^5.1.0",
+    "firebase-admin": "^13.4.0",
     "install": "^0.13.0",
     "node": "file:",
     "save-dev": "^0.0.1-security"
