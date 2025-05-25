@@ -1,10 +1,11 @@
 import express from "express";
 import { routes } from "./router/index";
-import { initializeApp } from "firebase-admin/app";
+import { initializeApp} from "firebase-admin/app";
+
+initializeApp();
 
 const app = express();
 
-initializeApp();
 
 routes(app);
 

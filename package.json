@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@google-cloud/firestore": "^7.11.1",
     "@tsconfig/recommended": "^1.0.8",
     "ecommerce-api": "file:",
     "express": "^5.1.0",
