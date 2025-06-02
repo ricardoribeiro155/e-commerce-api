@@ -15,6 +15,7 @@
     "@tsconfig/recommended": "^1.0.8",
     "ecommerce-api": "file:",
     "express": "^5.1.0",
+    "express-async-handler": "^1.2.0",
     "firebase-admin": "^13.4.0",
     "install": "^0.13.0",
     "node": "file:",

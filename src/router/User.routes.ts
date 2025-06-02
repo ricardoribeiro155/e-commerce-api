@@ -1,15 +1,11 @@
 import Express from "express";
 import { UserController } from "../controllers/users.controller";
+import AsyncHandler from "express-async-handler";
 
-export const userRoutes= Express.Router();
+export const userRoutes = Express.Router();
 
-
-userRoutes.get('/users', UserController.getAll)
-
-userRoutes.get('/users/:id', UserController.getById)
-
-userRoutes.post('/users', UserController.save)
-
-userRoutes.put('/users/:id', UserController.update)
-
-userRoutes.delete('/users/:id', UserController.delete)
+userRoutes.get('/users', AsyncHandler(UserController.getAll));
+userRoutes.get('/users/:id', AsyncHandler(UserController.getById)); 
+userRoutes.post('/users', AsyncHandler(UserController.save));
+userRoutes.put('/users/:id', AsyncHandler(UserController.update));
+userRoutes.delete('/users/:id', AsyncHandler(UserController.delete));
